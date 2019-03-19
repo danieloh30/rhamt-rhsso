@@ -31,6 +31,9 @@ LABEL description="Red Hat Application Migration Toolkit Web Console" \
 
 ADD keycloak-server-overlay-2.5.5.Final.zip /opt/tools/keycloak-server-overlay/
 
+RUN mkdir -p opt/apps
+ADD jee-example-app-1.0.0.ear /opt/apps/
+
 user 0
 
 RUN chown --recursive jboss:0 /opt/eap

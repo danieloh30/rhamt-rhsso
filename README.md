@@ -1,7 +1,7 @@
-Build Docker Container images of Red Hat Application Migration Toolkit(RHAMT) Web Console on OpenShift
+Build Docker Container images of RHAMT Web Console on OpenShift
 =========
 
-This repo contains customized RH-SSO theme, configuration to build RHAMT Web console image with overlay RH-SSO server.
+This repo contains customized RH-SSO theme, configuration to build Red Hat Application Migration Toolkit(RHAMT) Web console image with overlay RH-SSO server.
 
 Requirements
 ------------

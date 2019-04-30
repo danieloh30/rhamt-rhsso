@@ -30,8 +30,6 @@ LABEL description="Red Hat Application Migration Toolkit Web Console" \
       io.openshift.tags="rhamt,migration,ccnworkshop"
 
 ADD keycloak-server-overlay-2.5.5.Final.zip /opt/tools/keycloak-server-overlay/
-
-RUN mkdir -p opt/apps
 ADD monolith.war /opt/apps/
 
 user 0

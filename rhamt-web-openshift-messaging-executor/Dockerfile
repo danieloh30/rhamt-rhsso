@@ -14,9 +14,9 @@
 #
 # ------------------------------------------------------------------------
 #
-# This is a Dockerfile for the openshiftlabs/rhamt:4.2.0 image.
+# This is a Dockerfile for the openshiftlabs/rhamt-web-openshift-messaging-executor:4.2.1.Final image.
 
-FROM docker.io/windup3/windup-web-openshift-messaging-executor:4.2.0.Final
+FROM docker.io/windup3/windup-web-openshift-messaging-executor:4.2.1.Final
 
 MAINTAINER Daniel Oh
 

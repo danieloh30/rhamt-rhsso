@@ -14,7 +14,7 @@
 #
 # ------------------------------------------------------------------------
 #
-# This is a Dockerfile for the openshiftlabs/rhamt:4.2.0 image.
+# This is a Dockerfile for the openshiftlabs/rhamt-web-openshift:4.2.1.Final image.
 
 FROM docker.io/windup3/windup-web-openshift:4.2.1.Final
 

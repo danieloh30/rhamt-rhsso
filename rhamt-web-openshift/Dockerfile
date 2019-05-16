@@ -31,6 +31,7 @@ LABEL description="Red Hat Application Migration Toolkit Web Console" \
 
 ADD keycloak-server-overlay-2.5.5.Final.zip /opt/tools/keycloak-server-overlay/
 ADD monolith.war /opt/apps/
+ADD monolith-fixed.war /opt/solution/
 
 user 0
 

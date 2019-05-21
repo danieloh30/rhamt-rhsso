@@ -29,7 +29,7 @@ LABEL description="Red Hat Application Migration Toolkit Web Console" \
       io.openshift.expose-services="8080:http" \
       io.openshift.tags="rhamt,migration,ccnworkshop"
 
-#ADD keycloak-server-overlay-4.8.3.Final.zip /opt/tools/keycloak-server-overlay/
+ADD keycloak-server-overlay-4.8.3.Final.zip /opt/tools/keycloak-server-overlay/
 ADD monolith.war /opt/apps/
 ADD monolith-fixed.war /opt/solution/
 

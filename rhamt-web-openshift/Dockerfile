@@ -1,24 +1,4 @@
-# Copyright 2019 Red Hat
-#
-# Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this file except in compliance with the License.
-# You may obtain a copy of the License at
-#
-#     http://www.apache.org/licenses/LICENSE-2.0
-#
-# Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS,
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and
-# limitations under the License.
-#
-# ------------------------------------------------------------------------
-#
-# This is a Dockerfile for the openshiftlabs/rhamt-web-openshift:4.2.1.Final image.
-
-FROM docker.io/windup3/windup-web-openshift:4.2.1.Final
-
-MAINTAINER Daniel Oh
+FROM docker.io/windup3/windup-web-openshift:4.3.1.Final
 
 EXPOSE 8080
 
@@ -27,9 +7,9 @@ LABEL description="Red Hat Application Migration Toolkit Web Console" \
       io.k8s.description="Red Hat Application Migration Toolkit Web Console" \
       io.k8s.display-name="RHAMT Web Console" \
       io.openshift.expose-services="8080:http" \
-      io.openshift.tags="rhamt,migration,ccnworkshop"
+      io.openshift.tags="rhamt,migration"
 
-ADD keycloak-server-overlay-4.8.3.Final.zip /opt/tools/keycloak-server-overlay/
+# ADD keycloak-server-overlay-4.8.3.Final.zip /opt/tools/keycloak-server-overlay/
 ADD monolith.war /opt/apps/
 ADD monolith-fixed.war /opt/solution/
 

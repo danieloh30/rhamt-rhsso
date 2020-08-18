@@ -1,13 +1,14 @@
-FROM docker.io/windup3/windup-web-openshift:4.3.1.Final
+FROM docker.io/windup3/windup-web-openshift:5.0.0.Final
 
 EXPOSE 8080
 
-LABEL description="Red Hat Application Migration Toolkit Web Console" \
-      version="4.0.0-SNAPSHOT" \
-      io.k8s.description="Red Hat Application Migration Toolkit Web Console" \
-      io.k8s.display-name="RHAMT Web Console" \
+LABEL description="Migration Toolkit for Applications" \
+      version="5.0.0.Final" \
+      io.k8s.description="Migration Toolkit for Applications" \
+      io.k8s.display-name="MTA Web Console" \
       io.openshift.expose-services="8080:http" \
-      io.openshift.tags="rhamt,migration"
+      io.openshift.tags="mta,migration,ccn" \
+      maintainer="doh@redhat.com"
 
 # ADD keycloak-server-overlay-4.8.3.Final.zip /opt/tools/keycloak-server-overlay/
 ADD monolith.war /opt/apps/
